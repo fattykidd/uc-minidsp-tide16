@@ -52,7 +52,7 @@ services:
   ghcr.io/fattykidd/uc-minidsp-tide16:latest
 
 ```
-  Adding to Unfolded Circle Remote 3
+### Adding to Unfolded Circle Remote 3
 1. Open your Unfolded Circle Web Configurator in your browser.
 
 2. Navigate to Integrations -> Add Integration -> Driver URL / Custom Driver.
