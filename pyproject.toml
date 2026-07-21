@@ -1,0 +1,11 @@
+[project]
+name = "uc-minidsp-tide16"
+version = "1.0.0"
+description = "Unfolded Circle Remote 3 Integration for miniDSP Tide16"
+dependencies = [
+    "ucapi-framework>=1.9.5",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
