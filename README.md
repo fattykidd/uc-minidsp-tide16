@@ -60,4 +60,3 @@ services:
 3. Enter your docker host IP and driver port:http://<YOUR_DOCKER_HOST_IP>:8080/driver.json
 4. Follow the on-screen pairing steps to map your miniDSP entities to your UI pages and physical buttons.
 
-```
