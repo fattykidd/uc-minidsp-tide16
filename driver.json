@@ -1,0 +1,12 @@
+{
+  "driver_id": "uc-minidsp-tide16",
+  "name": "miniDSP Tide16",
+  "version": "1.0.0",
+  "developer": {
+    "name": "fattykidd",
+    "email": ""
+  },
+  "min_core_api": "0.18.0",
+  "port": 8080,
+  "executable": "driver"
+}
