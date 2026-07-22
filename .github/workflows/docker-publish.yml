@@ -58,3 +58,21 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Create Unfolded Circle Release Package
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          PACKAGE_NAME="uc-minidsp-tide16-${{ github.ref_name }}.tar.gz"
+          tar -czvf "$PACKAGE_NAME" \
+            --exclude='.git*' \
+            --exclude='.github' \
+            --exclude='__pycache__' \
+            driver.json driver uc_minidsp_tide16 pyproject.toml
+
+      - name: Create GitHub Release and Attach Package
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: uc-minidsp-tide16-*.tar.gz
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
