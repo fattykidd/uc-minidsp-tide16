@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+# Executable entrypoint called by Unfolded OS on the Remote
+exec python3 -m uc_minidsp_tide16.main
