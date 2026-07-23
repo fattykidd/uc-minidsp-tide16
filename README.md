@@ -4,7 +4,7 @@
 [![Docker Image Version](https://img.shields.io/docker/v/fattykidd/uc-minidsp-tide16?style=flat-square&logo=docker)](https://hub.docker.com/r/fattykidd/uc-minidsp-tide16)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-An official Unfolded Circle API integration driver that connects your **Unfolded Circle Remote 3** directly to a **miniDSP Tide16** audio processor over IP.
+An Un-official Unfolded Circle API integration driver that connects your **Unfolded Circle Remote 3** directly to a **miniDSP Tide16** audio processor over IP.
 
 This driver exposes full control over input selection, volume, muting, preset switching, and status feedback straight to your Remote 3 interface and custom home automation workflows.
 
